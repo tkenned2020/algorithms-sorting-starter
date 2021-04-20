@@ -10,14 +10,14 @@ function insertionSort(array) {
   // your code here
   for (let index = 1; index < array.length; index++) {
     let value = array[index];
-    for (let j = 0; j < index; j--) {
-      if (array[j] < value) {
-        swap(array, array[index], array[j]);
-      }
-    }
-  }
+    for (let j = 0; j < index; j++) {
+      if (value < array[j]) {
+        swap(array, index, j);
+      };
+    };
+  };
   return array;
-}
+};
 
 
 //function selectionSort(list) {
