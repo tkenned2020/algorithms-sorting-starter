@@ -13,8 +13,7 @@ function quickSort(array) {
   for (let i = 0; i < array.length; i++) {
     if (array[i] < pivot) {
       left.push(array[i]);
-    } else
-    {right.push(array[i])}
+    } else right.push(array[i])
   };
 
   let leftSort = quickSort(left)
